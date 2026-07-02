@@ -6,8 +6,7 @@ following ISO/SAE 21434, AUTOSAR Classic, and UN R155.
 
 ## Status
 
-**Phase 1 — Simulation** (active). See `CLAUDE.md` for the full execution
-plan. All `sim/` modules listed in `requirements/sim.txt` are implemented,
+**Phase 1 — Simulation** (active). All `sim/` modules listed in `requirements/sim.txt` are implemented,
 including the ECU object model (`ecu_base.py`, `sender_ecu.py`,
 `receiver_ecu.py`), `pdu_router.py`, `signal_packager.py`, `logger.py`, and
 `time_utils.py`.
@@ -42,6 +41,11 @@ uvicorn api.main:app --reload --port 8000
 python -m http.server 3000 --directory dashboard
 # then open http://localhost:3000/SecOC_Monitor.html
 ```
+
+Alternatively, on Windows, just double-click **`start.bat`** — it sets up the
+virtual environment, installs dependencies, starts the backend and dashboard
+servers in their own windows, and opens the Live Monitor in your browser
+automatically.
 
 See **`USERINFO.md`** for how to use the Live Monitor to validate secure
 communication (transmit/receive, attack injection, VTC scenario runs) and a

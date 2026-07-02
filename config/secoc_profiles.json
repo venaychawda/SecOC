@@ -1,0 +1,29 @@
+{
+  "PDU_BRAKE_TORQUE": {
+    "algorithm": "HMAC-SHA256",
+    "key_id": "secoc_mac_key_PDU_BRAKE_TORQUE",
+    "freshness_length": 2,
+    "authenticator_length": 8,
+    "profile_version": "v1",
+    "tfv_length": 1,
+    "tmac_length": 3
+  },
+  "PDU_0x100": {
+    "algorithm": "HMAC-SHA256",
+    "key_id": "secoc_mac_key_PDU_0x100",
+    "freshness_length": 2,
+    "authenticator_length": 8,
+    "profile_version": "v1",
+    "tfv_length": 1,
+    "tmac_length": 3
+  },
+  "PDU_0x200": {
+    "algorithm": "HMAC-SHA256",
+    "key_id": "secoc_mac_key_PDU_0x200",
+    "freshness_length": 2,
+    "authenticator_length": 8,
+    "profile_version": "v1",
+    "tfv_length": 1,
+    "tmac_length": 3
+  }
+}

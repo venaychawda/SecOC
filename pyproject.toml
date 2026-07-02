@@ -1,0 +1,12 @@
+[project]
+name = "secoc"
+version = "0.1.0"
+description = "AUTOSAR Classic Secure Onboard Communication (SecOC) simulation"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+include = ["sim*", "api*"]

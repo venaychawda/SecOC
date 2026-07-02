@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+design/
+docs/
+requirements/
+secoc.egg-info/
+CLAUDE.md
+
+
+
+# NvM JSON store (runtime state, not source)
+sim/nvm_store.json
+sim/*.tmp
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

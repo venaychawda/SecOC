@@ -25,7 +25,7 @@ pytest tests/ --runslow -v       # + timer-dependent tests
 
 ## Running the Dashboard
 
-**Proof of Concept** — standalone, no backend, pure JS animation:
+**Proof of Concept** — standalone, no backend, pure JS animation: [▶ Live Demo](https://venaychawda.github.io/SecOC/)
 
 ```bash
 open dashboard/index.html

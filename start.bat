@@ -70,7 +70,7 @@ REM --- 5. Launch the backend and the dashboard server in their own windows -
 echo [5/5] Starting the FastAPI backend and the dashboard server ...
 
 start "SecOC Backend (port 8000)" /D "%~dp0" cmd /k "call .venv\Scripts\activate.bat && uvicorn api.main:app --reload --port 8000"
-start "SecOC Dashboard (port 3000)" /D "%~dp0" cmd /k "call .venv\Scripts\activate.bat && python -m http.server 3000 --directory dashboard"
+start "SecOC Dashboard (port 3000)" /D "%~dp0" cmd /k "call .venv\Scripts\activate.bat && python -m http.server 3000 --directory docs"
 
 echo Waiting for the backend to come up ...
 timeout /t 4 /nobreak >nul
